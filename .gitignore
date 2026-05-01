@@ -1,0 +1,33 @@
+# --- Zig Build System ---
+# Folder, w którym lądują skompilowane pliki wykonywalne i biblioteki
+zig-out/
+
+# Lokalna pamięć podręczna kompilacji (często bardzo duża)
+.zig-cache/
+
+# --- Dependencies (Zon) ---
+# Jeśli używasz systemu pakietów, pobrane zależności są trzymane globalnie,
+# ale warto zabezpieczyć się przed lokalnymi śmieciami.
+*.zig.zon.lock
+
+# --- Editor & IDE ---
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# JetBrains (IntelliJ, CLion)
+.idea/
+
+# Vim / Emacs
+*~
+*.swp
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+
+# --- Temporary files ---
+# Pliki binarne generowane bezpośrednio przez zig build-exe lub build-obj
+*.o
+*.obj
+*.exe
