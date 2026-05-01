@@ -5,6 +5,7 @@ zig-out/
 # Lokalna pamięć podręczna kompilacji (często bardzo duża)
 .zig-cache/
 
+zig-pkg/
 # --- Dependencies (Zon) ---
 # Jeśli używasz systemu pakietów, pobrane zależności są trzymane globalnie,
 # ale warto zabezpieczyć się przed lokalnymi śmieciami.
@@ -31,3 +32,4 @@ Thumbs.db
 *.o
 *.obj
 *.exe
+!/zig-pkg/
